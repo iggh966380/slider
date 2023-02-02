@@ -32,4 +32,3 @@ function addSlider(element) {
 }
 addSlider(previous);
 addSlider(next);
-console.log(3);
