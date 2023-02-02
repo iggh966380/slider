@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .box div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box div .slider {
+        width: 100px;
+        border: 1px solid black;
+      }
+
+      @keyframes slider {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-100px);
+        }
+      }
+      .wrapper {
+        position: relative;
+      }
+      .slider {
+        position: absolute;
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="wrapper">
+        <div class="slider" data-target="slider">1</div>
+        <div class="slider" data-target="slider">2</div>
+        <div class="slider" data-target="slider">3</div>
+      </div>
+    </div>
+
+    <div class="front">前</div>
+    <div class="back">後</div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
