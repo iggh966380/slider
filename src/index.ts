@@ -4,6 +4,7 @@ const box = document.querySelector('.box') as HTMLDivElement;
 const wrapper = document.querySelector('.wrapper') as HTMLDivElement;
 
 const elementArray = getAllSliderElement();
+
 previousSlider(previous);
 nextSlider(next);
 
